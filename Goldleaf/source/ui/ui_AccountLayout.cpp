@@ -80,7 +80,7 @@ namespace ui {
 
     void AccountLayout::optsRename_DefaultKey() {
         const auto name = "3 ";
-        if(!name.empty()) {
+        if(name) {
             strcpy(this->cur_prof_base.nickname, name.c_str());
             const auto rc = acc::EditUser([&](AccountProfileBase *prof_base, AccountUserData *_user_data) {
                 memcpy(prof_base, &this->cur_prof_base, sizeof(this->cur_prof_base));
