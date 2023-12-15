@@ -3,7 +3,6 @@
 
     Goldleaf - Multipurpose homebrew tool for Nintendo Switch
     Copyright (C) 2018-2023 XorTroll
-
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -80,7 +79,7 @@ namespace ui {
     }
 
     void AccountLayout::optsRename_DefaultKey() {
-        const auto name = ShowKeyboard(cfg::Strings.GetString(213), this->cur_prof_base.nickname, 10, sizeof(this->cur_prof_base.nickname) - 1);
+        const auto name = ShowKeyboard(cfg::Strings.GetString(213), "");
         if(!name.empty()) {
             strcpy(this->cur_prof_base.nickname, name.c_str());
             const auto rc = acc::EditUser([&](AccountProfileBase *prof_base, AccountUserData *_user_data) {
