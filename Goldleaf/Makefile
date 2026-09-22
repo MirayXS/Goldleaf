@@ -46,7 +46,7 @@ ROMFS		:=	romfs
 
 VER_MAJOR	:= 1
 VER_MINOR	:= 2
-VER_MICRO	:= 0
+VER_MICRO	:= 1
 
 APP_TITLE   := Goldleaf
 APP_AUTHOR  := XorTroll

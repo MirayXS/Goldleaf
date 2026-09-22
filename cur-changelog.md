@@ -1,5 +1,7 @@
 # Master
 
+# `v1.2.1`
+
 - When previewing images, the preview image in the dialog is now scaled if the dimensions are too large
 
 - Added option to show USB speed
