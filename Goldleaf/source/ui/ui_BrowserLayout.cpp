@@ -604,12 +604,6 @@ namespace ui {
                         }
                         const bool skip_if_installed = (option_skip == 0);
 
-                        // const auto scan_subdirs = g_MainApplication->DisplayDialog("Install", "Scan subdirectories for NSP files?", { "Yes", "No", "Cancel" }, true);
-                        // if(scan_subdirs < 0) {
-                        //     return;
-                        // }
-                        // const bool scan_subdirectories = (scan_subdirs == 0);
-
                         bool any_installed = false;
                         for(const auto &nsp_name: nsps) {
                             const auto nsp_path = full_item + "/" + nsp_name;
